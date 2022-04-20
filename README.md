@@ -11,7 +11,7 @@ Users should be able to:
 
 ## Screenshot
 
-![](./screenshot.jpg)
+![](images/desktop-screenshot.png)
 
 ## Links
 
@@ -19,6 +19,8 @@ Users should be able to:
 - Live Site URL: [Add live site URL here](https://your-live-site-url.com)
 
 ## My process
+
+I decided to redo this challenge using LESS and timing myself. It took me a lot longer than I wanted it to because there are still some things I need more practice with. The idea is to start using frameworks to help with my coding. Tailwindcss looks fast and easy but ultimately I much prefer LESS because I get to define my own variables and feels more flexible to me at this point. Probably because I need a LOT more practive with Tailwind but for now I am happy just working with LESS.
 
 ### Built with
 
