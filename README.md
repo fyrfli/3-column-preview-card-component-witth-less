@@ -15,8 +15,8 @@ Users should be able to:
 
 ## Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Code](https://github.com/fyrfli/3-column-preview-card-component-witth-less)
+- Live Site URL: [Live](https://fyrfli.github.io/3-column-preview-card-component-with-less)
 
 ## My process
 
