@@ -1,0 +1,144 @@
+//primaries
+@brightorange: hsl(31, 77%, 52%);
+@darkcyan: hsl(184, 100%, 22%);
+@verydarkcyan: hsl(179, 100%, 13%);
+
+
+// neutrals
+@transpwhite: hsla(0, 0%, 100%, 0.75);
+@verylightgrey: hsl(0, 0%, 95%);
+@white: hsl(0, 0%, 100%);
+
+// attribution colors
+@footerlinkcolor: hsl(228, 45%, 44%);
+@footercolor: hsl(255, 0%, 0%);
+
+// border-radia
+
+.leftrounded () {
+  border-radius: 12px 0 0 12px;
+}
+
+.toprounded () {
+  border-radius: 12px 12px 0 0;
+}
+
+.bottomrounded () {
+  border-radius: 0 0 12px 12px;
+}
+
+.rightrounded () {
+  border-radius: 0 12px 12px 0;
+}
+
+@font-normal: {
+  font-size: 15px;
+}
+
+body {
+  font-family: "Lexend Deca", sans-serif;
+  background-color: @verylightgrey;
+}
+
+main {
+  display: flex;
+  margin: auto;
+}
+
+.container {
+  display: flex;
+  flex-flow: column wrap;
+  width: 60vw;
+  height: max-content;
+  justify-content: center;
+  color: @transpwhite;
+}
+
+.group-card {
+  padding: 3rem 2rem;
+}
+
+.group-icon {
+  width: 64px;
+}
+
+.sedans {
+  background-color: @brightorange;
+  .toprounded();
+}
+
+.sedans .button {
+  color: @brightorange;
+}
+
+.suvs {
+  background-color: @darkcyan;
+}
+
+.suvs .button {
+  color: @darkcyan;
+}
+
+.luxury {
+  background-color: @verydarkcyan;
+  .bottomrounded ();
+}
+
+.luxury .button {
+  color: @verydarkcyan;
+}
+
+.heading {
+  font-family: "Big Shoulders Display", sans-serif;
+  columns: @verylightgrey;
+  line-height: 1.2rem;
+}
+
+.description {
+  margin-top: 2rem;
+  font-size: 0.8em;
+  line-height: 1.4rem;
+}
+
+.button {
+  border: 2px solid transparent;
+  margin: 0;
+  font: inherit;
+  font-size: 0.9em;
+  margin: auto;
+  padding: 0.6rem 1rem;
+  border-radius: 24px;
+  margin-top: 1rem;
+}
+
+.button:hover,
+.button:active {
+  cursor: pointer;
+  background-color: inherit;
+  color: inherit;
+  border: 2px solid @white;
+}
+
+@media only screen and (min-width: 980px) {
+  body {
+    display: grid;
+    grid-template-rows: 1fr 2fr 1fr;
+  }
+
+  .container {
+    flex-flow: row nowrap;
+    grid-row: 2;
+  }
+
+  .sedans {
+    .leftrounded();
+  }
+
+  .luxury {
+    .rightrounded();
+  }
+
+  footer {
+    grid-row: 3;
+  }
+}
